@@ -1,0 +1,4 @@
+Add testing for Django master branch
+
+Will help ensure that django-decorator-include stays compatible as
+Django is developed.

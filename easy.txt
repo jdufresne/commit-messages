@@ -20,3 +20,4 @@
 - Run tests with all warnings on
 - add python_requires to setup.py
 - Turn on nitpicky mode for docs
+- Add Django master branch to tox matrix
