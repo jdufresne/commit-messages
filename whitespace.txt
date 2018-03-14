@@ -1,0 +1,5 @@
+Trim trailing white space throughout the project
+
+Many editors clean up trailing white space on save. By removing it all
+in one go, it helps keep future diffs cleaner by avoiding spurious white
+space changes on unrelated lines.

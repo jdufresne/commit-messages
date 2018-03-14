@@ -1,0 +1,18 @@
+Drop support for Django < 1.11 and remove workarounds
+
+Per Django's recommendation, now that django-taggit supports 2.0, it should
+drop support for Django < 1.11 to ease maintenance and compatibility across
+Django versions. So long as no deprecation warnings are produced, django-taggit
+should remain forward compatible with the next Django version.
+
+For more details, see the Django docs:
+
+https://docs.djangoproject.com/en/2.0/releases/2.0/#third-party-library-support-for-older-version-of-django
+
+> Third-party library support for older version of Django
+>
+> Following the release of Django 2.0, we suggest that third-party app authors
+> drop support for all versions of Django prior to 1.11. At that time, you
+> should be able to run your package’s tests using python -Wd so that
+> deprecation warnings do appear. After making the deprecation warning fixes,
+> your app should be compatible with Django 2.0.

@@ -1,0 +1,18 @@
+Pass python_requires argument to setuptools
+
+Helps pip decide what version of the library to install.
+
+https://packaging.python.org/tutorials/distributing-packages/#python-requires
+
+> If your project only runs on certain Python versions, setting the
+> python_requires argument to the appropriate PEP 440 version specifier
+> string will prevent pip from installing the project on other Python
+> versions.
+
+https://setuptools.readthedocs.io/en/latest/setuptools.html#new-and-changed-setup-keywords
+
+> python_requires
+>
+> A string corresponding to a version specifier (as defined in PEP 440)
+> for the Python version, used to specify the Requires-Python defined in
+> PEP 345.

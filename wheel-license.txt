@@ -1,0 +1,7 @@
+Include license file in the generated wheel package
+
+The wheel package format supports including the license file. This is
+done using the [metadata] section in the setup.cfg file. For additional
+information on this feature, see:
+
+https://wheel.readthedocs.io/en/stable/index.html#including-the-license-in-the-generated-wheel-file

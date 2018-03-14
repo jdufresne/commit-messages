@@ -1,0 +1,22 @@
+- iter(dict.keys()) -> iter(dict)
+- Add license_file to setup.cfg
+- Add trove classifiers
+- Mark project as stable
+- Use flake8-comprehensions
+- Look for http:// links; change to https://
+- Drop 2.6/3.3 support
+- add cache to travis
+- trim white space
+- Add tox for testing
+- readthedocs.org -> readthedocs.io (rtfd.org)
+- PyPi -> PyPI
+- Universal wheel support
+- [wheel] -> [bdist_wheel]
+- Integrate readme_renderer <https://github.com/pypa/readme_renderer>
+- Replace staticfiles with static in templates
+- Use flake8
+- Use isort
+- In tox, use skip_install for lint-like targets
+- Run tests with all warnings on
+- add python_requires to setup.py
+- Turn on nitpicky mode for docs
