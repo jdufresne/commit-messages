@@ -1,0 +1,14 @@
+Use skip_install=true for lint or static tox targets
+
+Avoids installing the package (and any potential dependencies) to the
+virtualenv before running lint or static commands. The package is not
+required to be installed to do simple static code analysis. Results in a
+slightly faster run, as fetching and installing dependencies is skipped.
+
+For additional information on the configuration option, see:
+
+https://tox.readthedocs.io/en/latest/config.html#confval-skip_install=BOOL
+
+> Do not install the current package. This can be used when you need the
+> virtualenv management but do not want to install the current package
+> into that environment.
