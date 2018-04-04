@@ -1,7 +1,6 @@
 - iter(dict.keys()) -> iter(dict)
 - Add license_file to setup.cfg
 - Add trove classifiers
-- Mark project as stable
 - Use flake8-comprehensions
 - Look for http:// links; change to https://
 - Drop 2.6/3.3 support
@@ -21,3 +20,4 @@
 - add python_requires to setup.py
 - Turn on nitpicky mode for docs
 - Add Django master branch to tox matrix
+- Mark project as stable
