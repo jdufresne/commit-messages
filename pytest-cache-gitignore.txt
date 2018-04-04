@@ -1,0 +1,10 @@
+Add new Pytest cache directory to gitignore
+
+Starting with Pytest 3.4.0 (2018-01-30), Pytest's cache directory was
+renamed to .pytest_cache.
+
+https://docs.pytest.org/en/latest/changelog.html#pytest-3-4-0-2018-01-30
+
+> The default cache directory has been renamed from .cache to
+> .pytest_cache after community feedback that the name .cache did not
+> make it clear that it was used by pytest.
