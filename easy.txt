@@ -11,6 +11,8 @@
   - ImportError
   - BytesIO/StringIO -> io
   - python_requires
+  - unittest2
+  - ordereddict
 - add cache to travis
 - trim white space
 - Add tox for testing
