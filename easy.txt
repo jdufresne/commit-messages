@@ -31,3 +31,4 @@
 - Add Django master branch to tox matrix
 - Mark project as stable
 - Move import statements to top of file
+- Change assertFalse() to assertIs(..., False)
