@@ -32,3 +32,4 @@
 - Mark project as stable
 - Move import statements to top of file
 - Change assertFalse() to assertIs(..., False)
+- pypi.python.org -> pypi.org
