@@ -1,0 +1,5 @@
+Update all pypi.python.org URLs to pypi.org
+
+For details on the new PyPI, see the blog post:
+
+https://pythoninsider.blogspot.ca/2018/04/new-pypi-launched-legacy-pypi-shutting.html
