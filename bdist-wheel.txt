@@ -2,6 +2,6 @@ Rename [wheel] section to [bdist_wheel] as the former is legacy
 
 For additional details, see:
 
-https://bitbucket.org/pypa/wheel/src/54ddbcc9cec25e1f4d111a142b8bfaa163130a61/wheel/bdist_wheel.py?fileviewer=file-view-default#bdist_wheel.py-119:125
+https://github.com/pypa/wheel/blob/3dc261abc98a5e43bc7fcf5783d080aaf8f9f0cf/wheel/bdist_wheel.py#L127-L133
 
 http://pythonwheels.com/
