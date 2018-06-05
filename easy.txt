@@ -13,6 +13,7 @@
   - python_requires
   - unittest2
   - ordereddict
+  - Position number in format strings
 - add cache to travis
 - trim white space
 - Add tox for testing
@@ -33,3 +34,7 @@
 - Move import statements to top of file
 - Change assertFalse() to assertIs(..., False)
 - pypi.python.org -> pypi.org
+- Sphinx
+  - sphinxcontrib.spelling
+  - nitpick mode
+  - treat warnings as errors
