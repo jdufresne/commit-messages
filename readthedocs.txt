@@ -1,13 +1,14 @@
 Prefer readthedocs.io instead of readthedocs.org for doc links
 
-Read the Docs moved hosting to readthedocs.io instead of readthedocs.org. Fix
-all links in the project.
+Read the Docs moved hosting to readthedocs.io instead of
+readthedocs.org. Fix all links in the project.
 
 For additional details, see:
 
 https://blog.readthedocs.com/securing-subdomains/
 
-> Starting today, Read the Docs will start hosting projects from subdomains on
-> the domain readthedocs.io, instead of on readthedocs.org. This change
-> addresses some security concerns around site cookies while hosting user
-> generated data on the same domain as our dashboard.
+> Starting today, Read the Docs will start hosting projects from
+> subdomains on the domain readthedocs.io, instead of on
+> readthedocs.org. This change addresses some security concerns around
+> site cookies while hosting user generated data on the same domain as
+> our dashboard.
