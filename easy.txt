@@ -4,6 +4,7 @@
 - Use flake8-comprehensions
 - Look for http:// links; change to https://
 - Update "docs.python.org/2" links to "docs.python.org/3"
+- Replace "docs.python.org/3" links with intersphinx
 - Drop 2.6/3.3 support
   - Use set literals
   - Use dict comprehension
