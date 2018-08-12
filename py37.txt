@@ -1,0 +1,5 @@
+Add testing and document support for Python 3.7
+
+Python 3.7 was released on June 27, 2018.
+
+https://docs.python.org/3/whatsnew/3.7.html
