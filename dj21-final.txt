@@ -1,0 +1,5 @@
+Test using Django 2.1 final release
+
+Django 2.1 was released on August 1, 2018.
+
+https://docs.djangoproject.com/en/2.1/releases/2.1/

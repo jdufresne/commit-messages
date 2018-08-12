@@ -6,16 +6,7 @@
 - Update "docs.python.org/2" links to "docs.python.org/3"
 - Replace "docs.python.org/3" links with intersphinx
 - Drop 2.6/3.3 support
-  - Use set literals
-  - Use dict comprehension
-  - Use set comprehension
-  - NullHandler
-  - ImportError
-  - BytesIO/StringIO -> io
-  - python_requires
-  - unittest2
-  - ordereddict
-  - Position number in format strings
+  - See py26.txt
 - add cache to travis
 - trim white space
 - Add tox for testing
@@ -41,3 +32,5 @@
   - nitpick mode
   - treat warnings as errors
   - Use intersphinx
+- Drop Python 2 support
+  - See py3.txt

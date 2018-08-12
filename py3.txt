@@ -1,0 +1,9 @@
+- Remove mock dependency
+- Remove six dependency
+- Remove __future__ imports
+- Replace super(ClassName, self) with super()
+- Remove # -*- coding: utf-8 -*-
+- Remove __ne__ from objects already defining a __eq__
+- Replace errno checks by IOError subclasses
+- Replace tempfile.mkdtemp() with TemporaryDirectory context manager
+- Replace io.open() by a plain open()

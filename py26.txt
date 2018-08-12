@@ -1,0 +1,10 @@
+- Use set literals
+- Use dict comprehension
+- Use set comprehension
+- NullHandler
+- ImportError
+- BytesIO/StringIO -> io
+- python_requires
+- unittest2
+- ordereddict
+- Position number in format strings
