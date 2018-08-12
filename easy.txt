@@ -40,3 +40,4 @@
   - sphinxcontrib.spelling
   - nitpick mode
   - treat warnings as errors
+  - Use intersphinx
