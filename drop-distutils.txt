@@ -1,0 +1,14 @@
+Drop legacy distutils in setup.py
+
+distutils is not recommended for use and unnecessary for modern Python
+environments. Use only setuptools instead. From
+https://docs.python.org/3/library/distutils.html:
+
+> Most Python users will not want to use this module directly, but
+> instead use the cross-version tools maintained by the Python Packaging
+> Authority. In particular, setuptools is an enhanced alternative to
+> distutils ...
+>
+> The recommended pip installer runs all setup.py scripts with
+> setuptools, even if the script itself only imports distutils. Refer to
+> the Python Packaging User Guide for more information.

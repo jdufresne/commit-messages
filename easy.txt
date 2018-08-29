@@ -33,3 +33,4 @@
   - Use intersphinx
 - Drop Python 2 support
   - See py3.txt
+- Drop distutils from setup.py
