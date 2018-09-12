@@ -8,3 +8,5 @@
 - Replace tempfile.mkdtemp() with TemporaryDirectory context manager
 - Replace io.open() by a plain open()
 - Replace codecs.open() by a plain open()
+- Update tox
+- Update trove classifiers

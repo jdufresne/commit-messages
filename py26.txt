@@ -8,3 +8,5 @@
 - unittest2
 - ordereddict
 - Position number in format strings
+- Update tox
+- Update trove classifiers
