@@ -10,3 +10,5 @@
 - Position number in format strings
 - Update tox
 - Update trove classifiers
+- grep version_info
+- grep 2\.6
