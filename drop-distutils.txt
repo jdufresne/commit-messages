@@ -1,4 +1,4 @@
-Drop legacy distutils in setup.py
+Drop legacy distutils fallback in setup.py
 
 distutils is not recommended for use and unnecessary for modern Python
 environments. Use only setuptools instead. From
