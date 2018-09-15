@@ -1,0 +1,15 @@
+Remove dependency of unmaintained nose
+
+The nose project has ceased development. The last commit is from Mar 3,
+2016. From their docs page:
+
+https://nose.readthedocs.io/
+
+> Note to Users
+>
+> Nose has been in maintenance mode for the past several years and will
+> likely cease without a new person/team to take over maintainership.
+> New projects should consider using Nose2, py.test, or just plain
+> unittest/unittest2.
+
+Simplify tests by using the stdlib unittest. One fewer dependency.
