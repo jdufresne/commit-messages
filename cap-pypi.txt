@@ -1,0 +1,3 @@
+Correct capitalization of PyPI
+
+As spelled on https://pypi.org/.
