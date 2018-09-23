@@ -25,7 +25,7 @@ tld_re = (
 host_re = hostname_re + domain_re + tld_re
 
 url_re = re.compile(
-    r'http://' + host_re + r'(?:[/?][^\s#]*)?',
+    r'http://' + host_re + r'(?:[/?][^\s#"\']*)?',
     re.IGNORECASE
 )
 example_re = re.compile(r'\bexample\.')
@@ -111,7 +111,8 @@ def main():
                                         urls[match] = None
                                         try:
                                             r = requests.get(secure_url, timeout=3)
-                                        except requests.exceptions.InvalidURL as e:
+                                        except (requests.exceptions.InvalidURL,
+                                                UnicodeError) as e:
                                             print('    %s' % e)
                                         except (requests.exceptions.SSLError,
                                                 requests.exceptions.ConnectionError,
