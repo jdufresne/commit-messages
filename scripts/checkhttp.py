@@ -25,7 +25,7 @@ tld_re = (
 host_re = hostname_re + domain_re + tld_re
 
 url_re = re.compile(
-    r'http://' + host_re + r'(?:[/?#][^\s]*)?',
+    r'http://' + host_re + r'(?:[/?][^\s#]*)?',
     re.IGNORECASE
 )
 example_re = re.compile(r'\bexample\.')
