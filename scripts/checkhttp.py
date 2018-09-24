@@ -75,6 +75,11 @@ def main():
         '.zip',
     ]
 
+    ignore = [
+        'composer.lock',
+        'npm-shrinkwrap.json',
+    ]
+
     root = os.getcwd()
     urls = {}
     for dirpath, dirnames, filenames in os.walk(root):
@@ -85,47 +90,52 @@ def main():
                 pass
 
         for fn in filenames:
+            if fn in ignore:
+                continue
+
             _, ext = os.path.splitext(fn)
-            if ext not in ignore_ext:
-                path = os.path.join(dirpath, fn)
-                if os.path.islink(path):
-                    continue
+            if ext in ignore_ext:
+                continue
 
-                print(path)
+            path = os.path.join(dirpath, fn)
+            if os.path.islink(path):
+                continue
 
-                try:
-                    with open(path) as fp:
-                        for line in fp:
-                            matches = url_re.findall(line)
-                            for match in matches:
-                                # Strip rst & md syntax.
-                                match = match.rstrip('"\'(),.<>[]_`')
-                                if match not in urls:
-                                    pr = list(urllib.parse.urlparse(match))
-                                    if not example_re.search(pr[1]):
-                                        print('  %s' % match)
+            print(path)
 
-                                        pr[0] = 'https'
-                                        secure_url = urllib.parse.urlunparse(pr)
+            try:
+                with open(path) as fp:
+                    for line in fp:
+                        matches = url_re.findall(line)
+                        for match in matches:
+                            # Strip rst & md syntax.
+                            match = match.rstrip('"\'(),.<>[]_`')
+                            if match not in urls:
+                                pr = list(urllib.parse.urlparse(match))
+                                if not example_re.search(pr[1]):
+                                    print('  %s' % match)
 
-                                        urls[match] = None
-                                        try:
-                                            r = requests.get(secure_url, timeout=3)
-                                        except (requests.exceptions.InvalidURL,
-                                                UnicodeError) as e:
-                                            print('    %s' % e)
-                                        except (requests.exceptions.SSLError,
-                                                requests.exceptions.ConnectionError,
-                                                requests.exceptions.ReadTimeout,
-                                                requests.exceptions.TooManyRedirects):
-                                            pass
-                                        else:
-                                            pr = urllib.parse.urlparse(r.url)
-                                            if pr.scheme == 'https' and r.status_code == 200:
-                                                print('  -> %s' % r.url)
-                                                urls[match] = r.url
-                except UnicodeDecodeError as e:
-                    print(str(e))
+                                    pr[0] = 'https'
+                                    secure_url = urllib.parse.urlunparse(pr)
+
+                                    urls[match] = None
+                                    try:
+                                        r = requests.get(secure_url, timeout=3)
+                                    except (requests.exceptions.InvalidURL,
+                                            UnicodeError) as e:
+                                        print('    %s' % e)
+                                    except (requests.exceptions.SSLError,
+                                            requests.exceptions.ConnectionError,
+                                            requests.exceptions.ReadTimeout,
+                                            requests.exceptions.TooManyRedirects):
+                                        pass
+                                    else:
+                                        pr = urllib.parse.urlparse(r.url)
+                                        if pr.scheme == 'https' and r.status_code == 200:
+                                            print('  -> %s' % r.url)
+                                            urls[match] = r.url
+            except UnicodeDecodeError as e:
+                print(str(e))
 
     for old_url, new_url in sorted(urls.items(), key=lambda item: len(item[0]), reverse=True):
         if new_url:
@@ -138,6 +148,8 @@ def main():
             ignore_args = []
             for ext in ignore_ext:
                 ignore_args.extend(['-not', '-name', f'*{ext}'])
+            for name in ignore:
+                ignore_args.extend(['-not', '-name', name])
 
             cmd = [
                 'find', root,
