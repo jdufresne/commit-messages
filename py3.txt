@@ -10,3 +10,4 @@
 - Replace codecs.open() by a plain open()
 - Update tox
 - Update trove classifiers
+- Look at isinstance(..., bytes) and isinstance(..., str)
