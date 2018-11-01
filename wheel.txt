@@ -1,0 +1,19 @@
+Distribute package as a universal wheel
+
+Wheels are the modern standard of Python distribution
+
+Advantages of wheels:
+
+- Faster installation
+- Avoids arbitrary code execution for installation by avoiding setup.py
+- Allows better caching for testing and continuous integration
+- Creates .pyc files as part of installation to ensure they match the
+  Python interpreter used
+- More consistent installs across platforms
+
+When you'd normally run `python3 setup.py sdist upload`, run instead
+`python3 setup.py sdist bdist_wheel upload`.
+
+For more details, see:
+
+https://pythonwheels.com/
