@@ -36,3 +36,4 @@
 - Drop distutils from setup.py
 - Replace deprecated optparse with argparse
 - Look for 'open(.*)\.read('
+- Remove references to deprecated easy_install
