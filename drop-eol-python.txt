@@ -1,0 +1,16 @@
+Drop support for EOL Pythons
+
+Python 2.6 and 3.3 are end of life. They are no longer receiving bug
+fixes, including for security issues. Python 2.6 went EOL on 2013-10-29
+and on 2017-09-29. For additional details on support Python versions,
+see:
+
+Supported: https://devguide.python.org/#status-of-python-branches
+EOL: https://devguide.python.org/devcycle/#end-of-life-branches
+
+Removing support for EOL Pythons will reduce testing and maintenance
+resources while allowing the library to move towards a modern Python 3
+style.
+
+Using pypinfo, we can show the PyPI download statistics, show very low
+numbers for EOL Pythons.
