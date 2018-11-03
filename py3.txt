@@ -11,3 +11,4 @@
 - Update tox
 - Update trove classifiers
 - Look at isinstance(..., bytes) and isinstance(..., str)
+- Replace references to virtualenv with venv
