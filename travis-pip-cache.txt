@@ -1,6 +1,6 @@
 Enable pip cache in Travis CI
 
-Slightly speed up builds and reduce load on PyPI servers.
+Reduce load on PyPI servers and slightly speed up builds.
 
 For more information, see:
 
