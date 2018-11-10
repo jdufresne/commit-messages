@@ -4,4 +4,4 @@ The wheel package format supports including the license file. This is
 done using the [metadata] section in the setup.cfg file. For additional
 information on this feature, see:
 
-https://wheel.readthedocs.io/en/stable/index.html#including-the-license-in-the-generated-wheel-file
+https://wheel.readthedocs.io/en/stable/user_guide.html#including-license-files-in-the-generated-wheel-file
