@@ -37,3 +37,5 @@
 - Replace deprecated optparse with argparse
 - Look for 'open(.*)\.read('
 - Remove references to deprecated easy_install
+- py.test -> pytest
+- license[_-]file -> license_files
