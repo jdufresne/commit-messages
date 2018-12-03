@@ -13,3 +13,4 @@
 - Replace references to virtualenv with venv
 - Fix shebangs
 - Remove decode argument
+- Drop u prefix from string literals
