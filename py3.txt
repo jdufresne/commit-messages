@@ -14,3 +14,7 @@
 - Fix shebangs
 - Remove decode argument
 - Drop u prefix from string literals
+- Remove __unicode__ method
+- Look for version_info, some uses might be outdated
+- Look for ImportError, some might be outdated
+- Add a line to the CHANGELOG
