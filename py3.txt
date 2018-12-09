@@ -19,3 +19,4 @@
 - Look for ImportError, some might be outdated
 - Add a line to the CHANGELOG
 - Look for new-style class definition
+- __nonzero__
