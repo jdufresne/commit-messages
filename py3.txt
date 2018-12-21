@@ -21,3 +21,4 @@
 - Look for new-style class definition
 - __nonzero__
 - Replace ugettext with gettext
+- Replace EnvironmentError, IOError, and WindowsError with OSError
