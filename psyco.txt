@@ -1,0 +1,13 @@
+Remove use of psyco
+
+The psyco package has been declared umaintained and dead. It is no
+longer receiving bug fixes including for security issues. From
+http://psyco.sourceforge.net/
+
+> 12 March 2012
+
+> Psyco is unmaintained and dead. Please look at PyPy for the
+> state-of-the-art in JIT compilers for Python.
+
+This avoid using and supporting an unmaintained package (since 2012).
+Users should use PyPy for the latest and greatest in Python JIT.

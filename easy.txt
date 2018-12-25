@@ -39,3 +39,4 @@
 - Remove references to deprecated easy_install
 - py.test -> pytest
 - license[_-]file -> license_files
+- Drop use of psyco
