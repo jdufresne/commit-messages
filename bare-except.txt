@@ -1,0 +1,12 @@
+Replace bare 'except:' with 'except Exception:'
+
+Catching all exceptions is generally considered a bad practice under
+most circumstances as it will also catch KeyboardInterrupt and
+SystemExit. These special cases should be raised to the interpreter to
+allow the Python process to exit.
+
+This fix complies with pycodestyle's error code E722:
+
+https://pycodestyle.readthedocs.io/en/latest/intro.html#error-codes
+
+> do not use bare except, specify exception instead
