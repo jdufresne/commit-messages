@@ -3,4 +3,8 @@ Remove use of unnecessary compat shim six.binary_type
 On Python 2, starting with Python 2.6, the type bytes exists as an alias
 of of str, same as the previously used six.binary_type. By using bytes,
 the code has less indirection and is more forward compatible with modern
-Python idioms.
+Python idioms. Observe:
+
+    $ python2.6
+    >>> bytes
+    <type 'str'>
