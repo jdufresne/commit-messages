@@ -22,3 +22,4 @@
 - __nonzero__
 - Replace ugettext with gettext
 - Replace EnvironmentError, IOError, and WindowsError with OSError
+- Make wheel no longer universal
