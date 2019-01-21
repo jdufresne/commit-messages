@@ -1,0 +1,5 @@
+Add Django 2.2a1 to the test matrix
+
+Django 2.2 alpha 1 was released on January 17, 2019.
+
+https://www.djangoproject.com/weblog/2019/jan/17/django-22-alpha-1/
