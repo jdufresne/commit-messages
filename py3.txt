@@ -24,3 +24,4 @@
 - Replace EnvironmentError, IOError, and WindowsError with OSError
 - Make wheel no longer universal
 - Use pyupgrade
+- Replace os.devnull with subprocess.DEVNULL
