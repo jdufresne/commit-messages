@@ -1,5 +1,5 @@
 - iter(dict.keys()) -> iter(dict)
-- Add license_file to setup.cfg
+- Remove license_file from setup.cfg
 - Add trove classifiers
 - Use flake8-comprehensions
 - Look for http:// links; change to https://
@@ -38,5 +38,4 @@
 - Look for 'open(.*)\.read('
 - Remove references to deprecated easy_install
 - py.test -> pytest
-- license[_-]file -> license_files
 - Drop use of psyco
