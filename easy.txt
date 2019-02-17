@@ -14,7 +14,6 @@
 - PyPi -> PyPI
 - Universal wheel support
 - [wheel] -> [bdist_wheel]
-- Integrate readme_renderer <https://github.com/pypa/readme_renderer>
 - Replace staticfiles with static in templates
 - Use flake8
 - Use isort
@@ -26,16 +25,12 @@
 - Move import statements to top of file
 - Change assertFalse() to assertIs(..., False)
 - pypi.python.org -> pypi.org
-- Sphinx
-  - sphinxcontrib.spelling
-  - Turn on nitpicky mode
-  - Treat warnings as errors
-  - Use intersphinx
 - Drop Python 2 support
   - See py3.txt
 - Drop distutils from setup.py
 - Replace deprecated optparse with argparse
 - Look for 'open(.*)\.read('
 - Remove references to deprecated easy_install
-- py.test -> pytest
 - Drop use of psyco
+- Drop six.bytes_type (just use bytes)
+- Drop six.next()/six.advance_iterator (just use next())
