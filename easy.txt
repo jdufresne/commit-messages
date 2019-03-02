@@ -34,3 +34,4 @@
 - Drop use of psyco
 - Drop six.bytes_type (just use bytes)
 - Drop six.next()/six.advance_iterator (just use next())
+- grep 'isinstance(\(.*\), .*) or isinstance(\1, .*)'
