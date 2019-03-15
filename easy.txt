@@ -1,5 +1,4 @@
 - iter(dict.keys()) -> iter(dict)
-- Remove license_file from setup.cfg
 - Add trove classifiers
 - Use flake8-comprehensions
 - Look for http:// links; change to https://
@@ -25,6 +24,10 @@
 - Move import statements to top of file
 - Change assertFalse() to assertIs(..., False)
 - pypi.python.org -> pypi.org
+- Sphinx
+  - Turn on nitpicky mode
+  - Treat warnings as errors
+  - Use intersphinx
 - Drop Python 2 support
   - See py3.txt
 - Drop distutils from setup.py
