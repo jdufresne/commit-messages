@@ -1,23 +1,22 @@
 #!/usr/bin/env python3
-
 import argparse
-import pip.req
+
 import requests
+from pip._internal import req
 
-
-PYPI_URL = 'https://pypi.python.org/pypi/%s/json'
+PYPI_URL = "https://pypi.python.org/pypi/%s/json"
 
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('path')
+    parser.add_argument("path")
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
 
-    for item in pip.req.parse_requirements(args.path, session='fake'):
+    for item in req.parse_requirements(args.path, session="fake"):
         pkg = item.name
         url = PYPI_URL % pkg
         r = requests.get(url)
@@ -25,10 +24,10 @@ def main():
         data = r.json()
 
         print(pkg)
-        for classifier in data['info']['classifiers']:
+        for classifier in data["info"]["classifiers"]:
             print(classifier)
         print()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
