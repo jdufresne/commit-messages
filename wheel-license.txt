@@ -1,6 +1,6 @@
-Removed deprecated license-file from setup.cfg.
+Remove deprecated license_file from setup.cfg
 
-Starting with wheel 0.32.0 (2018-09-29), the "license-file" option is
+Starting with wheel 0.32.0 (2018-09-29), the "license_file" option is
 deprecated.
 
 https://wheel.readthedocs.io/en/stable/news.html
