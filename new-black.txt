@@ -1,0 +1,9 @@
+Update Black URLs
+
+> Black, your uncompromising #Python code formatter, was a project
+> created with the community in mind from Day 1. Today we moved it under
+> the PSF umbrella. It's now available on GitHub under
+> https://github.com/python/black/ . You install and use it just like
+> before.
+
+https://twitter.com/llanga/status/1123980466292445190
