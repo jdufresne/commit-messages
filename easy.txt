@@ -1,6 +1,7 @@
 - iter(dict.keys()) -> iter(dict)
 - Add trove classifiers
 - Use flake8-comprehensions
+- Use flake8-pie
 - Look for http:// links; change to https://
 - Update "docs.python.org/2" links to "docs.python.org/3"
 - Replace "docs.python.org/3" links with intersphinx
