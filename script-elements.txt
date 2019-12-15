@@ -1,0 +1,14 @@
+Remove redundant type="text/javascript" from <script> elements
+
+In HTML5, <script> elements default to MIME type text/javascript. The
+HTML5 living standard and MDN recommend against including the attribute.
+
+From https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-type
+
+> The HTML5 specification urges authors to omit the attribute rather
+> than provide a redundant MIME type.
+
+From https://html.spec.whatwg.org/#the-script-element
+
+> Authors should omit the type attribute instead of redundantly setting
+> it.
