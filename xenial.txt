@@ -1,0 +1,8 @@
+Remove default 'dist: xenial' from Travis CI configuration
+
+Since May 2019, Travis has used Ubuntu Xenial 16.04 as the default
+Travis CI build environment.
+
+For additional details, see:
+
+https://blog.travis-ci.com/2019-04-15-xenial-default-build-environment
