@@ -1,7 +1,0 @@
-Use 'dist: xenial' in Travis to simplify configuration
-
-Allows using Python version 3.7 without sudo declarations.
-
-Travis officially added support for Xenial on 2018-11-08.
-
-https://blog.travis-ci.com/2018-11-08-xenial-release
