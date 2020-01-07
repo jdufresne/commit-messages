@@ -1,0 +1,18 @@
+Replace deprecated py.test command with pytest
+
+The pytest project recommends using the command pytest as an entry
+point, not py.test.
+
+https://docs.pytest.org/en/latest/faq.html#why-can-i-use-both-pytest-and-py-test-commands
+
+> Why can I use both pytest and py.test commands?
+>
+> pytest used to be part of the py package, which provided several
+> developer utilities, all starting with py.<TAB>, thus providing nice
+> TAB-completion. If you install pip install pycmd you get these tools
+> from a separate package. Once pytest became a separate package, the
+> py.test name was retained due to avoid a naming conflict with another
+> tool. This conflict was eventually resolved, and the pytest command
+> was therefore introduced. In future versions of pytest, we may
+> deprecate and later remove the py.test command to avoid perpetuating
+> the confusion.
