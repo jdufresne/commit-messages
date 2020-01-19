@@ -1,0 +1,4 @@
+Remove executable bit from non-executed files
+
+The files are not executed as standalone scripts, so remove the
+unnecessary permissions.

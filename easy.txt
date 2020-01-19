@@ -42,3 +42,4 @@
 - Look for executable files that shouldn't be
 - Run pyroma
 - Run pyupgrade
+- flake8-raise
