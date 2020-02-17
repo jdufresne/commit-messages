@@ -30,3 +30,4 @@
 - Bump Black's --target-version argument
 - Look for "closing" from contextlib, may no longer be necessary
 - Remove `def next()` in favor of `def __next__()`
+- Replace cPickle with pickle
