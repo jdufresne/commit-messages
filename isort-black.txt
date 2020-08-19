@@ -1,0 +1,5 @@
+ Simplify isort config using 'profile = black'
+
+isort now has builtin support for black through its "profiles" feature.
+
+https://timothycrosley.github.io/isort/docs/configuration/profiles/#black
